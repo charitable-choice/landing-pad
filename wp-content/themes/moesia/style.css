@@ -1480,7 +1480,7 @@ Header
 	opacity: 0.9;	
 }
 .overlay {
-	background: url('/wp-content/themes/moesia/images/pattern.png');
+	background: url('./images/pattern.png');
 	position: absolute;
 	top: 0;
 	z-index: 1;

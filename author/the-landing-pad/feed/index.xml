@@ -9,8 +9,8 @@
 
 <channel>
 	<title>The Landing Pad &#8211; The Landing Pad</title>
-	<atom:link href="/author/the-landing-pad/feed/?simply_static_page=218" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="./index.html?simply_static_page=437" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
 	<description></description>
 	<lastBuildDate>Fri, 08 Oct 2021 07:34:36 +0000</lastBuildDate>
 	<language>en-US</language>

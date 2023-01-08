@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments for The Landing Pad	</title>
-	<atom:link href="/comments/feed/?simply_static_page=39" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="./index.html?simply_static_page=258" rel="self" type="application/rss+xml" />
+	<link>./../../index.html</link>
 	<description></description>
 	<lastBuildDate>Sat, 07 Jan 2023 20:20:14 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,7 +20,7 @@
 	<item>
 		<title>
 		Comment on banner_04 by zelma		</title>
-		<link>/banner_04-2/#comment-1</link>
+		<link>./../../banner_04-2/index.html#comment-1</link>
 
 		<dc:creator><![CDATA[zelma]]></dc:creator>
 		<pubDate>Sat, 07 Jan 2023 20:20:14 +0000</pubDate>
