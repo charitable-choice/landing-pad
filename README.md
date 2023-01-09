@@ -6,22 +6,22 @@ You can use Docker to run a local instance of the site after restoring it from
 a backup.
 
 1. Restore a backup of the website
-  1. Run `docker compose up`
-      * Starts the Docker containers
-  1. Visit http://localhost:8080/wp-admin/install.php
-      * Setup Wordpress with any settings, these will be overridden later
-  1. Log in to http://localhost:8080/wp-admin/
-  1. Install the [All-in-One WP Migration plugin][1] ([developer website][2])
-  1. Use the All-in-One WP Migration plugin to import a `*.wpress` backup
+    1. Run `docker compose up`
+        * Starts the Docker containers
+    1. Visit http://localhost:8080/wp-admin/install.php
+        * Setup Wordpress with any settings, these will be overridden later
+    1. Log in to http://localhost:8080/wp-admin/
+    1. Install the [All-in-One WP Migration plugin][1] ([developer website][2])
+    1. Use the All-in-One WP Migration plugin to import a `*.wpress` backup
 1. Use phpMyAdmin to gain access to the website
-  1. Visit http://localhost:8081
-  1. Log in using the username and password specified in the `docker/db/.env`
-    file
-  1. Set a new password for the `admin` user in the `wrd_users` table
-    * Hash the password plaintext using the MD5 function
+    1. Visit http://localhost:8081
+    1. Log in using the username and password specified in the `docker/db/.env`
+      file
+    1. Set a new password for the `admin` user in the `wrd_users` table
+        * Hash the password plaintext using the MD5 function
 1. Log in to the restored website
-  1. Visit http://localhost:8080/wp-admin
-  1. Log in with the credentials set in the previous step
+    1. Visit http://localhost:8080/wp-admin
+    1. Log in with the credentials set in the previous step
 
 ## Exporting a static site
 
