@@ -1,4 +1,4 @@
-# The Landing Pad Dockerized Wordpress
+# The Landing Pad Dockerized Wordpress website
 
 ## Getting started
 
