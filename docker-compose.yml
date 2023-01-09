@@ -1,0 +1,23 @@
+services:
+  db:
+    image: mariadb:10.10
+    env_file:
+      - docker/db/.env
+  php-my-admin:
+    image: phpmyadmin:5.2
+    env_file:
+      - docker/db/.env
+    ports:
+      - 8081:80
+    depends_on:
+      - db
+  web:
+    image: wordpress:5.8-php7.4
+    volumes:
+      - ./docker/web/public_html:/var/www/html
+    env_file:
+      - docker/web/.env
+    ports:
+      - 8080:80
+    depends_on:
+      - db
