@@ -2,6 +2,9 @@
 
 ## Getting started
 
+You can use Docker to run a local instance of the site after restoring it from
+a backup.
+
 1. Restore a backup of the website
   1. Run `docker compose up`
       * Starts the Docker containers
@@ -12,7 +15,8 @@
   1. Use the All-in-One WP Migration plugin to import a `*.wpress` backup
 1. Use phpMyAdmin to gain access to the website
   1. Visit http://localhost:8081
-  1. Log in using the username and password specified in the `docker/db/.env` file
+  1. Log in using the username and password specified in the `docker/db/.env`
+    file
   1. Set a new password for the `admin` user in the `wrd_users` table
     * Hash the password plaintext using the MD5 function
 1. Log in to the restored website
@@ -21,13 +25,20 @@
 
 ## Exporting a static site
 
-Use the [Simply Static plugin][3] ([developer website][4]) to generate a static
-version of the website
+The static version of the website is stored in the `docs` directory and hosted
+on [GitHub Pages][5].
 
-* Ensure the "Destination URLs" option under the "General" tab is set to
-  "Save for offline use"
-* Ensure the "Force URL replacements" option under the "Advanced" tab is
-  selected
+1. Use the [Simply Static plugin][3] ([developer website][4]) to generate a
+static version of the website
+    * Ensure the "Destination URLs" option under the "General" tab is set to
+      "Save for offline use"
+    * Ensure the "Force URL replacements" option under the "Advanced" tab is
+      selected
+1. Remove all files in the `docs` directory
+    * This ensures deleted files aren't preserved when importing the new files
+1. Download and unzip the exported files
+1. Copy the exported files into the `docs` directory
+1. Commit changes and push to GitHub
 
 ## phpMyAdmin
 
@@ -60,3 +71,4 @@ docker compose -p landing-pad rm -fv
 [2]: https://servmask.com/
 [3]: https://wordpress.org/plugins/simply-static/
 [4]: https://patrickposner.dev/
+[5]: https://pages.github.com/
