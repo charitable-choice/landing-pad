@@ -3,7 +3,8 @@
 ## Getting started
 
 You can use Docker to run a local instance of the site after restoring it from
-a backup.
+a backup. Backups of the website are available in the Charitable Choice AWS
+account in an S3 bucket.
 
 1. Restore a backup of the website
     1. Run `docker compose up`
